@@ -10,7 +10,7 @@
         android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:contentDescription="@string/descricao_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -22,7 +22,7 @@
         android:id="@+id/pouco"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="32dp"
         android:text="@string/pouco"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="@+id/logo"
@@ -32,7 +32,7 @@
         android:id="@+id/muito"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="32dp"
         android:text="@string/muito"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="@+id/logo"
@@ -42,9 +42,20 @@
         android:id="@+id/seekbar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="@+id/muito"
         app:layout_constraintStart_toStartOf="@+id/pouco"
         app:layout_constraintTop_toBottomOf="@+id/pouco" />
+
+    <ImageView
+        android:id="@+id/humor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekbar"
+        app:srcCompat="@drawable/pouco" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
