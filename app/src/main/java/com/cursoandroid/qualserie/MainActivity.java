@@ -23,6 +23,18 @@ public class MainActivity extends AppCompatActivity {
         seekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                if (progress == 1){
+                    humor.setImageResource(R.drawable.pouco);
+                }
+                else if (progress == 2){
+                    humor.setImageResource(R.drawable.medio);
+                }
+                else if (progress == 3 ){
+                    humor.setImageResource(R.drawable.muito);
+                }
+                else if (progress == 4){
+                    humor.setImageResource(R.drawable.susto);
+                }
 
             }
 
