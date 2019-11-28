@@ -43,6 +43,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:max="4"
+        android:progress="0"
         app:layout_constraintEnd_toEndOf="@+id/muito"
         app:layout_constraintStart_toStartOf="@+id/pouco"
         app:layout_constraintTop_toBottomOf="@+id/pouco" />
